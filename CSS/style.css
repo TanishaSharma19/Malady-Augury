@@ -71,8 +71,9 @@ body{
 }
 .d-grid {
     display: grid!important;
-    width: 218%;
+    width: 221%;
 }
+
 .about .row .image-container{
     flex: 1 1 20rem;
     position: relative;
@@ -118,6 +119,12 @@ body{
     border-radius: .375rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
+p.para {
+    margin-left: 75px;
+}
+a.text-primary.fw-bold {
+    margin-left: 90px;
+}
 form {
     max-width: 100vw;
     display: inline-block;
@@ -128,6 +135,8 @@ form label {
     font-family: "Open Sans", sans-serif;
     font-size: 1.2rem;
     margin-bottom: 7px;
+    justify-content: center;
+    text-align: center;
     margin-top: 0.8rem;
 }
 form input {
@@ -141,10 +150,10 @@ form input:focus {
 	outline: none;
 	border: 2px solid darkslategray;
 }
-.d-grid {
+.d-grid-1 {
     display: grid!important;
     margin-top: 20px;
-    width: 220%
+    width: 180%
 }
 select#lang{
     width: 180%;
