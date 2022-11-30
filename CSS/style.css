@@ -57,6 +57,98 @@ body{
 .navbar a:hover{
     color: #fff;
 }
+.about .row{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+} 
+.mb-3 {
+    margin-bottom: 1rem!important;
+    width: 220%;
+}
+.d-grid {
+    display: grid!important;
+    width: 218%;
+}
+.about .row .image-container{
+    flex: 1 1 20rem;
+    position: relative;
+}
+.about .row .image-container .image{
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+}
+.about .row .content{
+    flex: 1 1 20rem;
+    margin-top: 2rem;
+    text-align: justify;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #333;
+    padding:0;
+}
+.about .row .content p{
+    font-size: 1.1rem;
+    color: #999;
+    padding-right: 1.5rem ;
+    padding-top: 0.85rem;
+    padding-left: 0;
+    padding-bottom: 1.2rem;
+    line-height: 1.5;
+}
+.form-control {
+    display: block;
+    width: 222%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .375rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+form {
+    max-width: 100vw;
+    display: inline-block;
+    margin-top: 20px;
+    line-height: 12px;
+}
+form label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+    margin-top: 0.8rem;
+}
+form input {
+	border: 2px solid lightslategray;
+	height: 40px;
+	border-radius: 3px;
+	padding: 5px;
+	font-size: 1rem;
+}
+form input:focus {
+	outline: none;
+	border: 2px solid darkslategray;
+}
+.d-grid {
+    display: grid!important;
+    margin-top: 20px;
+    width: 220%
+}
+select#lang{
+    width: 180%;
+}
 @media (max-width: 768px){
     .navbar{
         opacity: 0.95;
@@ -164,5 +256,18 @@ body{
 @media (max-width: 500px){
     .navbar-container input[type="checkbox"]:checked ~ .logo{
         display: none;
+    }
+    .about .row .content h3{
+        font-size: 2.75rem;
+        padding-left:2rem;
+        margin-top: 0;
+    }
+    .about .row .content p{
+        font-size: 0.9rem;
+        padding-right: 1.5rem ;
+        padding-top: 0.25rem;
+        padding-left: 2rem;
+        padding-bottom: 1.2rem;
+        line-height: 1.2;
     }
 }
